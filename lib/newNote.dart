@@ -51,24 +51,12 @@ class _newNoteState extends State<newNote> {
                           size: 30.0,
                         ),
                         onPressed: (){
-                          return null;
+                          Navigator.pop(context);
                         },
                       ),
                     ),
                     SizedBox(
                       width: 230,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0,23,0,0),
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.delete,
-                          size: 30.0,
-                        ),
-                        onPressed: (){
-                          Navigator.pop(context);
-                        },
-                      ),
                     ),
                   ],
                 ),
