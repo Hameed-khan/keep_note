@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1031246972167",
+    "project_id": "keepnote-dff81",
+    "storage_bucket": "keepnote-dff81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031246972167:android:6ce76d5a582652576371a2",
+        "android_client_info": {
+          "package_name": "com.flutter.keep_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031246972167-731ggubqqnhdbopo56tj90t37acsjcps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutter.keep_note",
+            "certificate_hash": "49975f2cd87c52f26824f91bd52653f497677ef4"
+          }
+        },
+        {
+          "client_id": "1031246972167-lejnha96vqk45l17n4u7s8r8ktat4ovk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZXZg9NO6cUHoBUXdDWZ_K5euVKKKnyRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031246972167-lejnha96vqk45l17n4u7s8r8ktat4ovk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
