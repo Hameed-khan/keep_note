@@ -121,7 +121,7 @@ class _newNoteState extends State<newNote> {
                         child: ElevatedButton(
                           onPressed: (){
                             setState(() {
-                              color = "Colors.orange";
+                              color = "Colors.red";
                             });
                           },
                           style: ButtonStyle(
@@ -162,7 +162,7 @@ class _newNoteState extends State<newNote> {
                         margin: EdgeInsets.fromLTRB(7,0,0,0),
                         child: ElevatedButton(
                           onPressed: (){
-                            color = "Colors.orange";
+                            color = "Colors.yellow";
                           },
                           style: ButtonStyle(
                               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -180,7 +180,7 @@ class _newNoteState extends State<newNote> {
                         margin: EdgeInsets.fromLTRB(7,0,0,0),
                         child: ElevatedButton(
                           onPressed: (){
-                            color = "Colors.orange";
+                            color = "Colors.green";
                           },
                           style: ButtonStyle(
                               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -198,7 +198,7 @@ class _newNoteState extends State<newNote> {
                         margin: EdgeInsets.fromLTRB(7,0,0,0),
                         child: ElevatedButton(
                           onPressed: (){
-                            color = "Colors.orange";
+                            color = "Colors.blue";
                           },
                           style: ButtonStyle(
                               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -216,7 +216,7 @@ class _newNoteState extends State<newNote> {
                         margin: EdgeInsets.fromLTRB(7,0,0,0),
                         child: ElevatedButton(
                           onPressed: (){
-                            color = "Colors.orange";
+                            color = "Colors.indigo";
                           },
                           style: ButtonStyle(
                               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -237,6 +237,7 @@ class _newNoteState extends State<newNote> {
                     margin: EdgeInsets.only(top: 10),
                     child: ElevatedButton(onPressed: (){
                       keepNoteRecord(titleText.text, NoteText.text);
+                      Navigator.pop(context);
                     }, child: Text("Save Note",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400),))),
               ],
             )

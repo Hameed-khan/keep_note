@@ -33,14 +33,25 @@ class _keep_noteState extends State<keep_note> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: TextField(                           // TextField editing the title
-            decoration: InputDecoration(
-              border: InputBorder.none,
-              errorBorder: InputBorder.none,
-              disabledBorder: InputBorder.none,
-              focusedBorder: InputBorder.none,
-            ),
-            controller:titleEditing ,
+          title: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(140,0,0,0),
+                child: Icon(
+                  Icons.delete,
+                  size: 24,
+                ),
+              ),
+              TextField(                           // TextField editing the title
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  errorBorder: InputBorder.none,
+                  disabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                ),
+                controller:titleEditing ,
+              ),
+            ],
           ),
           content:  Column(
             children: [
@@ -55,7 +66,7 @@ class _keep_noteState extends State<keep_note> {
                 ),
               ),
                  SizedBox(
-                   height: 390,
+                   height: 370,
                  ),
                  Row(                          // Cancel and Save Button
                    children: [
@@ -71,7 +82,13 @@ class _keep_noteState extends State<keep_note> {
                      SizedBox(width: 65,),
                      Container(
                           width: 80,
-                         child: ElevatedButton(child: Text("Save"))),
+
+                         child: ElevatedButton(
+                             style: ButtonStyle(
+                               backgroundColor: MaterialStateProperty.all(Colors.blue)
+                             ),
+                             child: Text("Save",style: TextStyle(color: Colors.white),)),
+                     ),
                    ],
                  ),
             ],
@@ -124,6 +141,9 @@ class _keep_noteState extends State<keep_note> {
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>newNote()));
               },
+              child: Icon(
+                Icons.add
+              ),
             ),
             // StreamBuilder Is used for get Data from firestore and display
             body:  StreamBuilder(
